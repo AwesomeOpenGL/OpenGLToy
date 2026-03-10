@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "opengltoy",
+  "version-string": "0.1.0",
+  "description": "Engineering-grade OpenGLToy build manifest based on CMake + vcpkg manifest mode.",
+  "license": "MIT",
+  "builtin-baseline": "110c50d4700794d87d95138cd8c1b3bbfee9bab5",
+  "dependencies": [
+    "fmt",
+    "glfw3",
+    "glm",
+    "stb",
+    {
+      "name": "glad",
+      "default-features": false,
+      "features": [
+        "loader",
+        "gl-api-43"
+      ]
+    }
+  ]
+}
